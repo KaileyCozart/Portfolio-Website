@@ -1,0 +1,641 @@
+
+body {
+    background-image: url(images/background4.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    line-height: 1.5;
+    font-size: 15px; 
+    color: black;
+    overflow: auto; 
+    text-align: center;
+}
+
+.franklin {
+    width: 80%; 
+    height: 50px;
+    padding-right: 3%;
+    margin-left: 10%;
+    margin-top: 0%;
+    margin-bottom: 100px;
+    background-color: grey; 
+    opacity: .5;
+    border-radius: 20px;
+}
+
+ul.list {
+    list-style: none; 
+    font-size: 20px; 
+    font-weight: bold; 
+    line-height: 1; 
+}
+
+ul>li {
+    display: inline-block;
+    margin-right: 10px; 
+    margin-top: 15px; 
+    list-style-type: none;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: white; 
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ ul>li>a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none; 
+     -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+}
+
+.buster {
+    color: white;
+    background-color: grey;
+    text-decoration: none; 
+     -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+}
+
+.logoSpacing {
+    margin-bottom: 40px; 
+}
+
+.logoSpacingIndex {
+    margin-bottom: 0px;    
+}
+
+
+/* CHALLENGES page */ 
+
+.luke {
+    background-image: url(images/background3.jpg);
+    background-size: cover;
+}
+
+
+/* LEARN & TIMELINE pages */ 
+
+/* #learn {
+    background-image: none; 
+    background-color: grey; 
+    background-size: contain; 
+} */
+
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+div.timeline-heading {
+    font-size: 30px;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 10%;
+  margin-left: -1.5px;
+}
+
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li > .timeline-panel {
+  width: 46%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  margin-right: 30%;
+}
+
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 105px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 9%;
+  margin-left: -25px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline-badge.primary {
+  background-color: grey !important;
+}
+
+.timeline-badge.success {
+  background-color: grey !important; 
+}
+
+.timeline-badge.warning {
+  background-color: grey !important; 
+}
+
+.timeline-badge.danger {
+  background-color: grey !important; 
+}
+
+.timeline-badge.info {
+  background-color: grey !important; 
+}
+
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+
+h3, .h3 {
+    font-size: 15px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 2px solid #eee;
+    color: white;
+}
+
+.learn-image {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+}
+
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900|Oswald);
+body{
+    padding: 50px 0;
+}
+
+.status {
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 200px;
+    width: 200px;
+    margin-left: 40%;
+}
+
+.status:hover {
+   -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+}
+
+.status .panel-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: grey;
+    line-height: 45px;
+    padding-top: 20px;
+    letter-spacing: -0.8px;
+}
+
+.panel-heading {
+    height: 150px;
+}
+
+.mary {
+    margin-top: 13%;
+}
+
+.krista {
+    background-image: url(images/GH.jpg);
+    background-size: cover;
+}
+
+.ryan {
+    background-image: url(images/background2.jpg);
+    background-size: cover;
+}
+
+.nate {
+    width: 40%;
+    margin-left: 1.7%;
+}
+
+
+
+
+
+
+
+/* PLANET page */ 
+
+h1 {
+    color: white;
+    text-shadow: 0.02em 0.02em 0.15em lightgrey;
+    padding-top: 10px;
+}
+
+h2 {
+    color: white;
+    font-size: 18px;
+    text-shadow: 0.02em 0.02em 0.15em lightgrey;
+    padding-top: 3px;
+}
+
+h3 {
+    color: white;
+    font-size: 13px;
+    text-shadow: 0.02em 0.02em 0.15em lightgrey;
+}
+
+#myCarousel {
+    background-color: black; 
+}
+
+#planetpage {
+    background-image: none; 
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.center-block {
+    height: 50%;
+    margin-top: 3%;
+}
+
+.carousel-control {
+    background-color: black;
+    height: 100%;
+    width: 10%;
+}
+
+.fill {
+    background-color: black;
+}
+
+
+div.frank {
+    padding-right: 0%;
+    padding-left: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    height: 220px;
+    width: 19%;
+    min-width: 250px; 
+    background-color: grey;
+    color: black;
+    margin-left: 22.7%;
+    margin-right: .5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
+
+div.frankie {
+    padding-right: 0%;
+    padding-left: 0%;
+    height: 220px;
+    width: 35%;
+    min-width: 250px;
+    background-color: grey;
+    color: black;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
+
+.carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev {
+    display: block;
+}
+
+.item {
+    background-color: black;
+}
+
+.planetimg {
+    height: 50%;
+    max-width: 50%;
+    border-radius: 50%;
+    color: white;
+    background-color: grey;
+    text-decoration: none; 
+     -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+}
+
+
+
+
+
+/* QUIZ page */
+
+.fay {
+    padding-right: 0%;
+    padding-left: 0%;
+    padding-top: 1.5%;
+    padding-bottom: 0%;
+    height: 1290%;
+    width: 70%;
+    min-width: 250px; 
+    background-color: grey;
+    color: black;
+    margin-left: 15%;
+    margin-right: .5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+     -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+}
+
+.fanny {
+    padding-right: 0%;
+    padding-left: 0%;
+    padding-top: 1.5%;
+    padding-bottom: 0%;
+    height: 95%;
+    width: 70%;
+    min-width: 250px; 
+    background-color: grey;
+    color: black;
+    margin-left: 15%;
+    margin-right: .5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+     -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+}
+
+.rey {
+    color: grey;
+}
+
+.leia {
+    color: black;
+    font-weight: bold;
+}
+
+.leia:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nathana {
+    background-image: url(images/publish.jpg);
+    background-size: cover;
+}
+
+.nathanb {
+    background-image: url(images/Hologram.jpg);
+    background-size: cover;
+}
+
+.abbie {
+    background-image: url(images/GGW.jpg);
+    background-size: cover;
+}
+
+.fattie {
+    padding-right: 0%;
+    padding-left: 0%;
+    padding-top: 1.5%;
+    padding-bottom: 0%;
+    height: 340%;
+    width: 70%;
+    min-width: 250px; 
+    background-color: grey;
+    color: black;
+    margin-left: 15%;
+    margin-right: .5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+     -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+}
+
+
+
+
+
+/* ACHIEVEMENTS page */
+
+.jaybo {
+    padding-top: 5px;
+    width: 30%;
+    height: 23%;
+    border-radius: 5px;
+     -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+    background-color: grey;
+    opacity: 0.7;
+    margin-left: 33%;
+    margin-bottom: 100px;
+}
+
+.jaybo:hover {
+    opacity: 0.9;
+}
+
+.keebler {
+    color: white; 
+    font-size: 10px;
+}
+
+.darth {
+    padding-right: 0%;
+    padding-left: 0%;
+    padding-top: 1.5%;
+    padding-bottom: 0%;
+    height: 190%;
+    width: 70%;
+    min-width: 250px; 
+    background-color: grey;
+    color: black;
+    margin-left: 15%;
+    margin-right: .5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+     -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+}
+
+.darthb {
+    padding-right: 0%;
+    padding-left: 0%;
+    padding-top: 1.5%;
+    padding-bottom: 0%;
+    height: 270%;
+    width: 70%;
+    min-width: 250px; 
+    background-color: grey;
+    color: black;
+    margin-left: 15%;
+    margin-right: .5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+     -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+}
+
+.asdf {
+    background-image: url(images/deathwatch.jpg);
+    background-size: cover;
+}
+
+.qwer {
+    background-image: url(images/background5.jpg);
+    background-size: cover;
+}
+
+/* LOGIN page */
+
+.janice {
+    padding-right: 0%;
+    padding-left: 0%;
+    padding-top: 1.5%;
+    padding-bottom: 0%;
+    height: 40%;
+    width: 30%;
+    opacity: .85;
+    min-width: 250px; 
+    background-color: grey;
+    color: black;
+    margin-left: 35%;
+    margin-right: .5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+     -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+}
+
+.button {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 50%;
+      border-radius: 5px;
+     -webkit-box-shadow: 0 0 10px black;
+        box-shadow: 0 0 10px black;
+  
+}
+
+.button:hover {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 50%;
+      border-radius: 5px;
+     -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+}
+
+.input {
+    color: black;
+}

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <head>
+		<title>Lightsharp Login</title>
+        <link rel="SHORTCUT ICON" href="images/Death Star Icon.png">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="stylesheet.css" rel="stylesheet" />
+        
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+		<script src="bootstrap/js/bootstrap.js"></script>
+    </head>
+    <body>
+       <a href="index.html"><img src="images/lightsharp.png" alt="Star Wars Font 2" class="logoSpacingIndex"></a>
+<div class="janice">
+        <form name="login">
+            <h2>Username: <input type="text" class="input" name="userid"/></h2>
+            <h2>Password: <input type="password" class="input" name="pswrd"/></h2>
+            <input type="button" class="button" onclick="check(this.form)" value="Login"/>
+        </form>
+        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "Jaybo_Hood" && form.pswrd.value == "Iego1000Angel") {
+                    window.open('http://chstechclass.com/kcozart/Star%20Wars%20Website/index.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Invalid Password or Username")/*displays error message*/
+                }
+            }
+        </script>
+        </div>
+    </body>
+</html>

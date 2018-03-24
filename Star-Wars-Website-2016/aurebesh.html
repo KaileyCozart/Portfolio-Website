@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<title>Lightsharp</title>
+        <link rel="SHORTCUT ICON" href="images/Death Star Icon.png">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="stylesheet.css" rel="stylesheet" />
+        
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+		<script src="bootstrap/js/bootstrap.js"></script>
+        <!--script type="text/javascript">
+
+if (screen.width <= 699) {
+document.location = "mobile.html";
+}
+
+       </script-->
+       <script>
+
+// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+	"mp3": "audio/mpeg",
+	"mp4": "audio/mp4",
+	"ogg": "audio/ogg",
+	"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+	var html5audio=document.createElement('audio')
+	if (html5audio.canPlayType){ //check support for HTML5 audio
+		for (var i=0; i<arguments.length; i++){
+			var sourceel=document.createElement('source')
+			sourceel.setAttribute('src', arguments[i])
+			if (arguments[i].match(/\.(\w+)$/i))
+				sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+			html5audio.appendChild(sourceel)
+		}
+		html5audio.load()
+		html5audio.playclip=function(){
+			html5audio.pause()
+			html5audio.currentTime=0
+			html5audio.play()
+		}
+		return html5audio
+	}
+	else{
+		return {playclip:function(){throw new Error("Unfortunately, your browser does not support HTML5 audio.")}}
+	}
+}
+
+//Initialize two sound clips with 1 fallback file each:
+
+var mouseoversound=createsoundbite("whistle.wav", "whistle.ogg")
+var clicksound=createsoundbite("click.wav", "click.ogg")
+
+</script>
+
+  </head>
+	<body>
+
+
+<a href="index.html"><img src="images/lightsharp.png" alt="Star Wars Font 2" class="logoSpacing"></a>
+
+<div class="franklin">
+    <nav>
+    <ul class="list">
+        <li><a href="learn.html" onmouseover="mouseoversound.playclip()">LEARN</a></li> 
+        <li><a href="challenges.html" onmouseover="mouseoversound.playclip()">CHALLENGES</a></li>
+        <li><a href="achievements.html" onmouseover="mouseoversound.playclip()">ACHIEVEMENTS</a></li>  
+        <li><a href="more.html" onmouseover="mouseoversound.playclip()">MORE</a></li> 
+        <li><a href="about.html" onmouseover="mouseoversound.playclip()">ABOUT</a></li>
+    </ul>
+    </nav>
+</div>
+
+<div class="darth">
+    <div class="buster"><h1></h1></div><br />
+    <h2><p>a menagerie be kebiin, vorpan, bal daryc shapes undulated o'r front be kaysh sa kaysh hands fumbled dos te bar toward kaysh pirur. te one-eyed besalisk bartender bal cantina ganyc had given kaysh a toxic-looking vorpan loras ibac hardly looked edible, a she drank bic, shi guuror she had drank anay toxic-looking dink ibac te bith gave kaysh. despite te rather disheveled bartender, sa pirusti sa te equally hideous building, she really didn&#226;&#8364;&#8482;t mind te taap. a blue-skinned twi&#226;&#8364;&#8482;lek ti a mangled lekku slid lo te seat projor at kaysh, sneaking a glance o'r kaysh direction while kaysh hailed te besalisk. turning at troan him, te dala raised kaysh jorad jaon te cantina cacophony at jorhaa'ir. &#226;&#8364;&#339;what cuyir ya selling ibi'tuur, igniz?&#226;&#8364;&#157; &#226;&#8364;&#339;deathsticks. a don&#226;&#8364;&#8482;t tionir par &#226;&#8364;&#732;em. Ni kar'taylir gar ain&#226;&#8364;&#8482;t got te credits, vylla. &#226;&#8364;&#157; vylla chuckled. &#226;&#8364;&#339;i don&#226;&#8364;&#8482;t copad gar deathsticks. not ibi'tuur. &#226;&#8364;&#157; she paused. &#226;&#8364;&#339;well, meg vaabir gar copad, then?&#226;&#8364;&#157; ru'tionir an annoyed igniz. &#226;&#8364;&#339;weapons, fake id &#226;&#8364;&#8220; shi te basics. &#226;&#8364;&#157; igniz arched an eyebrow bal thoughtfully waved be'chaaj some be te carud ibac had drifted acyk him bal vylla. finally, kaysh sighed bal slapped an infocard bat te kajir, shaking his kov'nyn sa kaysh did bid. &#226;&#8364;&#339;dunkan makon; he&#226;&#8364;&#8482;ll ve'ganir gar started. he&#226;&#8364;&#8482;s a&#226;&#8364;&#166; friendly weequay. &#226;&#8364;&#157; vylla nodded. stupid human. she&#226;&#8364;&#8482;d draar gotal'ur bic. sa igniz walked be'chaaj, kaysh paused bal took solus final haa'taylir sha te evaar'la girl bal snickered. she&#226;&#8364;&#8482;d cuyir kyr'am before munit. igniz shrugged. ibac was te ara be te galaxy; te weak ones ru'ash'amur dayn. bal igniz didn&#226;&#8364;&#8482;t mind helping them at val deaths. ***</p><p>in te dha, teh a kaysh taap Nor'be a garbage container, vylla observed te doorway. t'ad arane rucuyir posted ogir &#226;&#8364;&#8220; a scary-looking wookie bal some kind be humanoid. te arane, she assumed, had been posted at warn whatever ne'tra market syndicate ibac existed inside te warehouse be any police. val really had naas at worry about. coruscant security didn&#226;&#8364;&#8482;t bother coming daab at te dirycir levels be te oriya. par hours, vylla had watched teh kaysh taap. a kisol smugglers, assassins, bal ashi choice scum had passed lo dunkan&#226;&#8364;&#8482;s warehouse, a vylla had nayc such plans. sha least, she wasn&#226;&#8364;&#8482;t planning bat coming adol te front Kurshok. sa igniz had bid kindly reminded kaysh, she was broke. she Ru'lis draar afford te sol'waadar be a prime ga'amur ra a fake id. nayc, she Ru'kel vaabir meg she had ratiin done, meg she was jate sha &#226;&#8364;&#8220; stealing. quietly, she slid dayn teh kaysh spot Nor'be te garbage bin, walking be'chaaj teh te warehouse. she had spotted a taller, abandoned building at te abesh be te taap, bal she sauntered at te building. ogir was nayc solus gebi te abandoned ruug'la building. tion'tuur she slipped o'r adol a shuk'la Utrey, she was surprised at mar'eyir some sort be ruug'la factory. ti a giant leap, te lithe girl grabbed a piece be machinery bal ru'nartimir kaysh ascent. ge at te third floor, jii. suddenly, however, te machinery shifted, making a creaking noise. kaysh gaan slipped, leaving kaysh hanging de kaysh fingertips. blast bic. jii she had at hurry. te arane probably heard ibac. taking a ryc'la kar'am, she pulled herself laam at te top be te machinery bal jumped. par a moment, she was mav, suspended enaabe jaon'kov te ground. then came te familiar harsh landing ibac shocked kaysh feet. venjii a hop, skip, bal shol'shya ku'rukar, she was flying once tug'yc &#226;&#8364;&#8220; ibic ca'nara acyk te factory bal te warehouse. shol'shya mirshir, shol'shya harsh landing, bal she was bat top be dunkan&#226;&#8364;&#8482;s taap. remembering te arane, vylla dashed at haa'taylir daab sha vaii val had been standing. te arane rucuyir dar. double blast. she was running dayn be ca'nara. frantically echoy'la, vylla found meg she had been looking par. a vent. sliding o'r, she shimmied kaysh ara adol. sha te sol'yc opening o'r te vent, she dropped daab lo te warehouse. staabi o'r front be dunkan&#226;&#8364;&#8482;s arane. ***<p/><p> shrouded o'r de te dha, te hooded figure spoke. naak cuyir a jehaat, ogir cuyir shi passion adol passion, Ni gain kot adol kot, Ni gain power adol power, Ni gain parjai adol parjai, ner chains Kelir cuyir shuk'la te force Kelir set ni mav. as kaysh watched te figure chant, kaysh ru'aalar his bones chill bal his kar'ta falter. ibic wasn&#226;&#8364;&#8482;t staabi. naasad be ibic was staabi. kaysh was a crime lord, kaysh had nayc jorbe at cuyir afraid be a petty cultist! a kaysh couldn&#226;&#8364;&#8482;t shake te foreboding tone be te figure&#226;&#8364;&#8482;s words. suddenly, te Kurshok burst tenn, bal dunkan&#226;&#8364;&#8482;s arane thrust a girl o'r front be him. &#226;&#8364;&#339;sssssir, vi found thisss solus - tresssspassing. &#226;&#8364;&#157; the crime lord gave a toothy grin. she Ru'kel Nusujii hibirar meg ru'banar at those tion'ad trespassed onto his rusur.
+</p></h2>
+    
+</body>
+</html>

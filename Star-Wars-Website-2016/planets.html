@@ -1,0 +1,672 @@
+<html>
+    <head>
+        <title>Lightsharp</title>
+        <link rel="SHORTCUT ICON" href="images/Death Star Icon.png">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="stylesheet.css" rel="stylesheet" />
+        
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+		<script src="bootstrap/js/bootstrap.js"></script>
+        <!--script type="text/javascript">
+
+if (screen.width <= 699) {
+document.location = "mobile.html";
+}
+
+       </script-->
+       <script>
+
+// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+	"mp3": "audio/mpeg",
+	"mp4": "audio/mp4",
+	"ogg": "audio/ogg",
+	"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+	var html5audio=document.createElement('audio')
+	if (html5audio.canPlayType){ //check support for HTML5 audio
+		for (var i=0; i<arguments.length; i++){
+			var sourceel=document.createElement('source')
+			sourceel.setAttribute('src', arguments[i])
+			if (arguments[i].match(/\.(\w+)$/i))
+				sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+			html5audio.appendChild(sourceel)
+		}
+		html5audio.load()
+		html5audio.playclip=function(){
+			html5audio.pause()
+			html5audio.currentTime=0
+			html5audio.play()
+		}
+		return html5audio
+	}
+	else{
+		return {playclip:function(){throw new Error("Unfortunately, your browser does not support HTML5 audio.")}}
+	}
+}
+
+//Initialize two sound clips with 1 fallback file each:
+
+var mouseoversound=createsoundbite("whistle.wav", "whistle.ogg")
+var clicksound=createsoundbite("click.wav", "click.ogg")
+
+</script>
+
+
+    </head>
+    
+    
+    
+    
+    
+    <body id="planetpage">
+        
+        
+        
+        <!-- Full Page Image Background Carousel Header -->
+<header id="myCarousel" class="carousel slide" data-interval="false">
+  <!-- Wrapper for Slides -->
+   <div class="carousel-inner">
+      <div class="item active">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Galaxy.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Explore</h1>
+                            <img class="planetimg" src="images/Explorebox.jpg"/>                             
+         </div>
+         <div class="frankie col-md-3 col-sm-12">
+             <h2>Planet Concordance:</h2>  
+             <h3>Alderaan, Bespin, Christophsis, Corellia, Coruscant, Dagobah,</h3>
+             <h3>Dantooine, Dathomir, Endor, Eriadu, Felucia, Florrum, Geonosis,</h3>
+             <h3>Hoth, Iego, Ithor, Jakku, Kadavo, Kamino, Kashyyyk,</h3>
+             <h3>Kessel, Korriban, Kuat, Malastare, Mandalore, Mustafar, Mygeeto,</h3> 
+             <h3>Naboo, Nal Hutta, Neimoidia, Polis Massa, Raydonia, Rishi, Rodia,</h3> 
+             <h3>Ryloth, Scipio, Sullust, Tatooine, Teth, Trandosha, Umbara, Utapau, Yavin</h3>
+         </div> 
+      </div>
+      
+       <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Alderaan.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Alderaan</h1>
+                            <img class="planetimg" src="images/Alderaanbox.jpg"/></div>
+         <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Core Worlds, Alderaan Sector</h3> 
+             <h3>(Capital: Aldera)</h3>       
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Homeworld of Senator Bail Antilles, Bail Organa, & Leia Organa</h3> 
+                <h3>Destroyed by the First Death Star</h3>                   
+         </div>                    
+      </div>
+      
+       <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Bespin.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Bespin</h1>
+                            <img class="planetimg" src="images/Bespinbox.jpg"/></div>
+         <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Anoat Sector</h3>
+                               <h3>(Capital: Cloud City)</h3>      
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Led by Lando Calrissian</h3>                   
+                <h3>Gas planet - cities only exist in its atmosphere</h3>                                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Christophsis.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Christophsis</h1>
+                            <img class="planetimg" src="images/Christophsisbox.png"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Not Available</h3>
+             <h3>(Capital: Chaleydonia)</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Location of two battles during the Clone Wars</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Corellia.png" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Corellia</h1>
+                            <img class="planetimg" src="images/Corelliabox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Core Worlds, Sector Not Available</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Known for its pilots and starships</h3> 
+                <h3>Homeworld of Han Solo and Wedge Antilles</h3>  
+                <h3>Millennium Falcon and Imperial starships built here</h3>                        
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Coruscant.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Coruscant</h1>
+                            <img class="planetimg" src="images/Coruscantbox.jpeg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Core Worlds, Corusca Sector</h3>  
+             <h3>(Capital: Galactic City)</h3>          
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Entire planet is one city; homeworld of the Human species</h3> 
+                <h3>The most influencial planet in the galaxy & has been the seat of various governments</h3>                               
+         </div> 
+      </div>
+                   
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Dagobah.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Dagobah</h1>
+                            <img class="planetimg" src="images/Dagobahbox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Sector Not Available</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Swamp planet uninhabited by intelligent species</h3>  
+                <h3>Place of hiding for Jedi Master Yoda</h3>     
+                <h3>Training location of Jedi Knight Luke Skywalker</h3>                
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Dantooine.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Dantooine</h1>
+                            <img class="planetimg" src="images/Dantooinebox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Sector Not Available</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Location of brief battle during the Clone Wars</h3>   
+                <h3>Briefly used as Rebellion base location</h3>                   
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Dathomir.png" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Dathomir</h1>
+                            <img class="planetimg" src="images/Dathomirbox.jpeg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Mid Rim, Quelli Sector</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Home of the Nightsisters</h3>   
+                <h3>Home of the Nightbrothers</h3>                   
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Endor.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Endor</h1>
+                            <img class="planetimg" src="images/Endorbox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Moddell Sector</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Home of the Ewok species</h3> 
+                <h3>The moon contained a sheild generator for the Second Death Star,</h3><h3>which was destroyed by the Rebel Alliance</h3>                     
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Eriadu.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Eriadu</h1>
+                            <img class="planetimg" src="images/Eriadubox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Seswenn Sector</h3> 
+             <h3>(Capital: Eriadu City)</h3>    
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Home of Grand Moff Tarkin</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Felucia.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Felucia</h1>
+                            <img class="planetimg" src="images/Feluciabox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Sector Not Available</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Important planet in the Perlemian Trade Route</h3>  
+                <h3>Location of serveral battles during the Clone Wars</h3>   
+                <h3>Jedi Master Aayla Secura was killed here during Order 66</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Florrum.png" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Florrum</h1>
+                            <img class="planetimg" src="images/Florrumbox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Sertar Sector</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Location of Hondo Ohnaka's gang of pirates</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Geonosis.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Geonosis</h1>
+                            <img class="planetimg" src="images/Geonosisbox.png"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Arkanis Sector</h3> 
+             <h3>(Capital: Stalgasin Hive)</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Location of massive Confederate droid facteries and</h3><h3>the first battle of the Clone Wars</h3> 
+                <h3>Homeworld of insectoid Geonosian species</h3>                     
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Hoth.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Hoth</h1>
+                            <img class="planetimg" src="images/Hothbox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Anoat Sector</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>The Rebel Alliance's Echo Base (and the</h3><h3>subsequent Battle of Hoth) was located on this ice planet</h3>                
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Iego.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Iego</h1>
+                            <img class="planetimg" src="images/Iegobox.png"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Not Available</h3>     
+             <h2>SIGNIFICANCE:</h2>
+              <h3>The planet has 1,000 moons</h3>  
+                <h3>One of its moons is populated by the Angel species</h3>                    
+         </div> 
+      </div>
+      
+       <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Ithor.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Ithor</h1>
+                            <img class="planetimg" src="images/Ithorbox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Mid Rim, Sector Not Available</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Jungle homeworld of the Ithorian species</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Jakku.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Jakku</h1>
+                            <img class="planetimg" src="images/Jakkubox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Western Reaches of the Inner Rim, Sector Not Available</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Desert planet and home of Rey</h3>  
+                <h3>Location of a battle between the Galactic Empire and</h3><h3>the New Republic following the Battle of Endor</h3>                      
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Kadavo.png" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Kadavo</h1>
+                            <img class="planetimg" src="images/Kadavobox.PNG"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Not Available</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Home of Zygerrian Slave Trade during the Clone Wars</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Kamino.png" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Kamino</h1>
+                            <img class="planetimg" src="images/Kaminobox.png"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Beyond the Rishi Maze, Abrion Sector</h3>  
+             <h3>(Capital: Tipoca City)</h3>   
+             <h2>SIGNIFICANCE:</h2>
+                <h3>An aquatic planet whose native Kaminoan species</h3><h3>are the best cloners in the galaxy</h3>
+                <h3>Home planet of the Republic Clone Army</h3>                      
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Kashyyyk.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Kashyyyk</h1>
+                            <img class="planetimg" src="images/Kashyyykbox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Mid Rim, Mytaranor Sector</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Home planet of the Wookie species</h3>
+                <h3>Location of one of the last battles during the Clone Wars</h3>                     
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Kessel.png" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Kessel</h1>
+                            <img class="planetimg" src="images/Kesselbox.png"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Kessel Sector</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Criminal spice mine planet run by the Pyke Syndicate</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Korriban.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Korriban</h1>
+                            <img class="planetimg" src="images/Korribanbox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Esstran Sector, Horuset System</h3>
+             <h3>(Also Known As Pesegam or Moraband)</h3>  
+             <h3>(Capital: Dreshdae)</h3>          
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Homeworld of the Sith Species and Sith Order</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Kuat.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Kuat</h1>
+                            <img class="planetimg" src="images/Kuatbox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Core Worlds, Sector Not Available</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Major producer of starships for both the Galactic Empire</h3><h3>and the Galactic Republic</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Malastare.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Malastare</h1>
+                            <img class="planetimg" src="images/Malastarebox.png"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Mid Rim, Dustig Sector</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Known for massive fuel reserves</h3>  
+                <h3>Homeworld of Senator Ainlee Teem</h3>
+                <h3>Homeworld of the Zilo Beast and a battle during the Clone Wars</h3>                         
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Mandalore.png" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Mandalore</h1>
+                            <img class="planetimg" src="images/Mandalorebox.png"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Mandalore Sector</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Mandalore's moon, Concordia, is the home of the Death Watch,</h3><h3>which Jango Fett was a part of</h3>  
+                <h3>Homeworld of Duchess Satine Kryze</h3>                   
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Mustafar.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Mustafar</h1>
+                            <img class="planetimg" src="images/Mustafarbox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Atravis Sector</h3> 
+             <h3>(Capital: Fralideja)</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>A volcanic Confederate planet where Anakin Skywalker</h3><h3>and Obi Wan Kenobi battled</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Mygeeto.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Mygeeto</h1>
+                            <img class="planetimg" src="images/Mygeetobox.png"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Sector Not Available</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>A frigid crystalline planet and homeworld of the Lurmen species</h3>
+                 <h3>Jedi Master Ki-Adi-Mundi was killed here during Order 66</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Naboo.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Naboo</h1>
+                            <img class="planetimg" src="images/Naboobox.png"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Mid Rim, Chommell Sector</h3>
+             <h3>(Human Capital: Theed; Gungan Capital: Otoh Gunga)</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Pacifist home planet of Emperor Palpatine and Padme Amidala</h3>   
+                <h3>Home planet of the aquatic Gungan species & site of the Trade Federation Blockade</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/NalHutta.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Nal Hutta</h1>
+                            <img class="planetimg" src="images/NalHuttabox.jpeg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Sector Not Available</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Swampy homeworld of the Hutt species</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Neimoidia.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Neimoidia</h1>
+                            <img class="planetimg" src="images/Nemoidiabox.png"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Location Not Available</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Homeworld of the Neimoidian species</h3>      
+                <h3>Homeworld of Viceroy Nute Gunray and Senator Lott Dod</h3>              
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/PolisMassa.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Polis Massa</h1>
+                            <img class="planetimg" src="images/PolisMassabox.png"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Subterrel Sector</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Asteroid Field and birthplace of Luke and Leia Skywalker</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Raydonia.png" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Raydonia</h1>
+                            <img class="planetimg" src="images/Raydoniabox.jpeg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Sector Not Available</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Location where Darth Maul and Savage Opress fought</h3><h3>Obi Wan Kenobi and Asajj Ventress during the Clone Wars</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Rishi.png" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Rishi</h1>
+                            <img class="planetimg" src="images/Rishibox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Abrion Sector</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Rishi's moon contained a Republic outpost during the Clone Wars</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Rodia.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Rodia</h1>
+                            <img class="planetimg" src="images/Rodiabox.png"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Sector Not Available</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Homeworld of the Rodian species</h3>  
+                <h3>Represented by Senator Onaconda Farr</h3>              
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Ryloth.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Ryloth</h1>
+                            <img class="planetimg" src="images/Rylothbox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Gaulus Sector</h3>  
+             <h3>(Capital: Lessu)</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Homeworld of the Twi'lek species</h3>  
+                <h3>Its Twi'lek inhabitants were briefly captured by the Separatists</h3><h3>during the Clone Wars, but were freed by the Republic</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Scipio.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Scipio</h1>
+                            <img class="planetimg" src="images/Scipiobox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Albarrio Sector</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Ice planet and head of the InterGalactic Banking Clan</h3>
+                <h3>Represented by Senator Rush Clovis</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Sullust.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Sullust</h1>
+                            <img class="planetimg" src="images/Sullustbox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Sullust Sector</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Homeworld of the Sullustan species</h3>  
+                <h3>Used by the Rebel Alliance as a staging area before the Battle of Endor</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Tatooine.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Tatooine</h1>
+                            <img class="planetimg" src="images/Tantooinebox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Arkanis Sector</h3>  
+             <h3>(Capital: Mos Espa)</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Desert homeworld of Anakin and Luke Skywalker</h3> 
+                <h3>Homeplanet of the Jawa and Tusken Raiders</h3>                   
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Teth.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Teth</h1>
+                            <img class="planetimg" src="images/Tethbox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Wild Space, Baxel Sector</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Location of the B'omarr Order Monastery</h3> 
+                <h3>Planet is located deep in Hutt space</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Trandosha.png" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Trandosha</h1>
+                            <img class="planetimg" src="images/Trandoshabox.jpg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Mid Rim, Mytaranor Sector</h3>     
+             <h2>SIGNIFICANCE:</h2>
+               <h3>Jungle homeworld of the savage Transdoshan species</h3>                      
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Umbara.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Umbara</h1>
+                            <img class="planetimg" src="images/Umbarabox.png"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Expansion Region, Ghost Nebula</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Known as the "Shadow World" and location of a battle during the Clone Wars</h3>                    
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Utapau.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Utapau</h1>
+                            <img class="planetimg" src="images/Utapaubox.png"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Tarabba Sector</h3> 
+             <h3>(Capital: Pau City)</h3>       
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Homeworld to the Pau'ans and the Utai, as well as Amani immigrants</h3> 
+                 <h3>Location of the Battle of Utapau during the Clone Wars</h3>                         
+         </div> 
+      </div>
+      
+      <div class="item">
+         <!-- Set the second background image using inline CSS below. -->
+         <div class="fill"><img src="images/Yavin4.jpg" img class="center-block"></div>
+         <div class="frank col-md-3 col-sm-12"><h1>Yavin</h1>
+                            <img class="planetimg" src="images/Yavin4box.jpeg"/></div>
+                            <div class="frankie col-md-3 col-sm-12">
+             <h2>LOCATION:</h2><h3>Outer Rim Territories, Gordian Reach</h3>     
+             <h2>SIGNIFICANCE:</h2>
+                <h3>Yavin's moon, Yavin 4, was home to the ancient</h3><h3>Massassi warriors and was a base to the Rebel Alliance</h3>                    
+         </div> 
+      </div>
+      
+      
+   </div>
+   
+   <!-- Controls -->
+   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+   <span class="icon-prev"></span>
+   </a>
+   <a class="right carousel-control" href="#myCarousel" data-slide="next">
+   <span class="icon-next"></span>
+   </a>
+</header>
+<!-- /.container -->
+    
+    
+    
+    
+    
+    </body>
+</html>

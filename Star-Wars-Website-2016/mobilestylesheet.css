@@ -1,0 +1,36 @@
+body {
+    background-image: url(images/background4.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    line-height: .75;
+    font-size: 30px; 
+    overflow: auto; 
+    text-align: center;
+}
+
+ul.list {
+    list-style: none; 
+    font-size: 20px; 
+    font-weight: bold; 
+    line-height: 1; 
+}
+
+ul>li {
+    display: inline-block;
+    margin-right: 15px; 
+    margin-top: 15px; 
+    list-style-type: none;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: white; 
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ul>li>a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none; 
+}

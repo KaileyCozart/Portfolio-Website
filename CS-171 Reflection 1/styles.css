@@ -1,0 +1,100 @@
+/* Generic CSS */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+
+p {
+    margin-top: 0px;
+    padding-top: 16px;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: white;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 0px;
+    margin-top: 25px;
+}
+
+button:hover {
+    box-shadow: 0 0 10px white;
+}
+
+button:focus {
+    outline: 0px;
+}
+
+.aButton {
+    color: black;
+}
+
+.leftAlign {
+    text-align: left;
+}
+
+.blackImgdiv {
+    background: url(images/blackbackground.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Images CSS */
+
+.kaileyCozart {
+    margin-top: 220px;
+    height: 100px;
+}
+
+.headers {
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+/* Div CSS */
+
+.heroDiv {
+    height: 500px;
+    width: 100%;
+}
+
+.bubbleTriangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 30px solid #909090;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+    position: relative;
+    left: 0px;
+}
+
+.greyBubble {
+    width: 100%;
+    background-color: #909090;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer {
+    padding: 50px 0px 50px 0px;
+}

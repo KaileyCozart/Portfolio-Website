@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<title>Lightsharp</title>
+        <link rel="SHORTCUT ICON" href="images/Death Star Icon.png">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="stylesheet.css" rel="stylesheet" />
+        
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+		<script src="bootstrap/js/bootstrap.js"></script>
+        <!--script type="text/javascript">
+
+if (screen.width <= 699) {
+document.location = "mobile.html";
+}
+
+       </script-->
+       <script>
+
+// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+	"mp3": "audio/mpeg",
+	"mp4": "audio/mp4",
+	"ogg": "audio/ogg",
+	"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+	var html5audio=document.createElement('audio')
+	if (html5audio.canPlayType){ //check support for HTML5 audio
+		for (var i=0; i<arguments.length; i++){
+			var sourceel=document.createElement('source')
+			sourceel.setAttribute('src', arguments[i])
+			if (arguments[i].match(/\.(\w+)$/i))
+				sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+			html5audio.appendChild(sourceel)
+		}
+		html5audio.load()
+		html5audio.playclip=function(){
+			html5audio.pause()
+			html5audio.currentTime=0
+			html5audio.play()
+		}
+		return html5audio
+	}
+	else{
+		return {playclip:function(){throw new Error("Unfortunately, your browser does not support HTML5 audio.")}}
+	}
+}
+
+//Initialize two sound clips with 1 fallback file each:
+
+var mouseoversound=createsoundbite("whistle.wav", "whistle.ogg")
+var clicksound=createsoundbite("click.wav", "click.ogg")
+
+</script>
+
+  </head>
+<BODY><div class="fanny">
+<h1>Timeline Test</h1>
+    <div class="buster"><h1>SCORE: 90%</h1></div><br />
+    <div class="buster"><h2>CODE: UtArmani90</h2></div><br />
+    
+
+
+
+            
+        <div class="col-xs-6 col-md-6 nate">
+          <a  href="mailto:kaileync@comcast.net?
+subject=TIMELINE%20TEST%20ACHIEVEMENT%20
+&amp;body=USERNAME:%20&amp;body=CODE:%20" style="text-decoration: none; color: black;">
+            <div class="panel status panel-success">
+                <div class="panel-heading nathana">
+                   
+                </div>
+                
+                <div class="panel-body text-center">                        
+                    <a class="leia" href="mailto:kaileync@comcast.net?
+subject=TIMELINE%20TEST%20ACHIEVEMENT%20
+&amp;body=USERNAME:%20&amp;body=CODE:%20">Publish Scores</a> 
+                </div>
+            </div>
+           </a>
+        </div>
+        
+        <div class="col-xs-6 col-md-6 nate">
+          <a href="learn.html" style="text-decoration: none; color: black;">
+            <div class="panel status panel-success">
+                <div class="panel-heading nathanb">
+                   
+                </div>
+                
+                <div class="panel-body text-center">                        
+                    <a class="leia" href="learn.html">Return to Learning</a> 
+                </div>
+            </div>
+           </a>
+        </div>
+        
+      

@@ -1,0 +1,407 @@
+<html>
+	<head>
+		<title>Lightsharp</title>
+        <link rel="SHORTCUT ICON" href="images/Death Star Icon.png">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="stylesheet.css" rel="stylesheet" />
+        
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+		<script src="bootstrap/js/bootstrap.js"></script>
+        <!--script type="text/javascript">
+
+if (screen.width <= 699) {
+document.location = "mobile.html";
+}
+
+       </script-->
+       <script>
+
+// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+	"mp3": "audio/mpeg",
+	"mp4": "audio/mp4",
+	"ogg": "audio/ogg",
+	"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+	var html5audio=document.createElement('audio')
+	if (html5audio.canPlayType){ //check support for HTML5 audio
+		for (var i=0; i<arguments.length; i++){
+			var sourceel=document.createElement('source')
+			sourceel.setAttribute('src', arguments[i])
+			if (arguments[i].match(/\.(\w+)$/i))
+				sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+			html5audio.appendChild(sourceel)
+		}
+		html5audio.load()
+		html5audio.playclip=function(){
+			html5audio.pause()
+			html5audio.currentTime=0
+			html5audio.play()
+		}
+		return html5audio
+	}
+	else{
+		return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+	}
+}
+
+//Initialize two sound clips with 1 fallback file each:
+
+var mouseoversound=createsoundbite("whistle.wav", "whistle.ogg")
+var clicksound=createsoundbite("click.wav", "click.ogg")
+
+</script>
+
+
+  </head>
+	<body id="learn">
+        
+        
+
+
+<div class="container">
+  <div class="page-header">
+    <h1 id="timeline">Timeline of Galactic History</h1>
+  </div>
+  <ul class="timeline">
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>36,453 BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">Tho Yor Arrival</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>During an era of where space travel was relatively new, nine ships, called the Tho Yor, arrived on the planet Tython. The force-sensitive pilgrims inside of these ships established the Je'daii Order, using the moons Ashla and Bogan to illustrate the balance of the force.</p> </div>
+          <img class="learn-image" src="images/Tho Yor.jpg"/>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>25,053 BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">Unification War</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>The Independent Planet alliance (Outer Planets) seceeded from the Union of Allied Planets (Core Worlds). The Union of Allied Planets were victorious.
+          Leading to the formation of the Galactic Republic, the Unification Wars resulted in the Core Founders signing the Galactic Constitution.
+          </p>
+        </div>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge danger"><h3>24,500 BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">The First Great Schism</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>In order to separate themselves from the ever-growing influence of the fledgeling Galactic Republic, the Jedi Order relocated from the Deep Core planet of Tython to
+              the Outer Rim planet of Ossus. Jedi named Xendor and Lyn left, against the Order's will, and began a academy on the planet of Lettow. These Jedi became known as the 
+              Legions of Lettow. This schism resulted in war between the two Jedi groups.
+          </p></div>
+           <img class="learn-image" src="images/FGS.jpg"/>
+      </div>
+    </li>
+   
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>24,000-23,900 BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">Tionese War</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>The Tionese War was fought between the Galactic Republic and the Honorable
+              Union of Desevro & Tion. Ultimately, the Galactic Republic won the conflict 
+              with the aid of the Jedi. The Republic won the war by turing the Hutts against 
+              the Union. In the end, all of the worlds, with the exception of Desevro, joined 
+              the Rpublic. The war resulted in the Jedi officially declaring themselves 
+              loyal to the Republic.
+          </p>
+        </div>
+      </div>
+    </li>
+    
+     <li class="timeline-inverted">
+      <div class="timeline-badge danger"><h3>7,003 <br/>BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">The Second Great Schism</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>The Jedi who practiced alchemy and the Dark Side of the Force split from the Jedi Order. The Hundred-Year Darkness,
+             as well as the formation of the sith, followed this split.
+          </p></div>
+          <img class="learn-image" src="images/SGS.jpg"/>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>7,000-6,900 <br/>BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">Hundred-Year Darkness</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>This era saw the formation of the Sith when a rogue Jedi lead others astray.
+              Battles during this era included the Great Scourge of Malachor, where many 
+              Jedi and Sith had their remains petrified on the planet of Malachor. Kylo Ren's lightsaber seems
+              to be from the era. Moreover, following the Battle of Takodana, Maz Kanata's castle was constructed. 
+              The Sith began errecting huge temples on the planet Korriban, transforming the planet into their 
+              sacred place.
+          </p>
+        </div>
+        <img class="learn-image" src="images/HYD.jpg"/>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge danger"><h3>5,000 <br/>BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">The Great Hyperspace War</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>The Sith Empire was discovered by Gav and Jori Daragon. In the following conflict, the Republic and Jedi defeated the Sith, forcing the Sith Lord Naga Sadow to flee
+              to Yavin 4. To show its appreciation of the Jedi, the Galactic Republic gave the Jedi a temple on Coruscant. 
+          </p></div>
+       <img class="learn-image" src="images/GH.jpg"/>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>4,250 <br/>BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">Third Great Schism</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>Jedi influenced by the Sith turned against the Order. After fighting on Coruscant the Dark Jedi were forced to the Vultar System. Attempting
+              to use the Cosmic Turbine, the Dark Jedi inadvertantly destroyed the Vultar System in what is called the Vultar Cataclysm. 
+          </p>
+        </div>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge danger"><h3>3,996 <br/>BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">The Great Sith War</small></p>
+        </div>
+        <div class="timeline-body">
+          <p> When Sith Lord Freedon Nadd's power was discovered on the planet Onderon by the Jedi, the Jedi
+              temporarily broke his hold of the planet. However, the Sith retaliated, and Jedi Knight Ulic Qel-Droma 
+              inflitrated the Sith, only to fall prey to the Dark Side thanks to Exar Kun. During a battle on Ossus,
+              Kun retreated to Yavin 4 and Qel-Droma was captured. Qel-Droma recognized his failure and led the Jedi
+              and the Republic Rim Fleet to Yavin 4, where Exar Kun was defeated. </p></div>
+              <img class="learn-image" src="images/GSW.jpg"/>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>3,976-3,960 <br/> BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">The Mandalorian Wars</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>The Mandalorains, under the leadership of Mandalore the Ultimate and his lieutenant 
+              Cassus Fett, conquered systems on the edge of the galaxy. Jedi Knight Revan hid the Mandalorian's
+              symbol of leadership, the Mandalore's Mask, and turned to the Dark Side while investigating the
+              Sith that had encouraged the Mandalorians to go to war.</p>
+        </div>
+        <img class="learn-image" src="images/MW.jpg"/>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>3,970-3,670 <br/>BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">The Kanz Disorders</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>Myrial seceeded the Kanz sector from the republic, destroying planets such as
+              Ereesi and enslaving the Lorrdian species. A bioengineered monster was placed
+              in the Pits of Lorrd, and many slaves were murdered by the beast. Finally, Lorrdian
+              Jedi Knight Mari-Elan Nora led a force that liberated the slaves. Overall, the conflict
+              was a Republic failure to protect it's citizens; over 500 million Lorrdians, as well
+              as 5 billion other beings, had been killed.
+          </p>
+        </div>
+        <img class="learn-image" src="images/KD.jpg"/>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>3,958-3,956 <br/>BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">The Second Great Sith War (The Jedi Civil War)</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>Founding his own Sith Empire, Jedi Knight Revan, as well as his apprentice, Darth Malak, invaded the
+              Galactic Republic. Revan was returned to the Jedi and later killed Malak and destroyed the Star Forge, ending the war.  </p>
+        </div>
+        <img class="learn-image" src="images/JCW.jpg"/>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>3,956-3,950 <br/>BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">The Sith Civil War & First Jedi Purge</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>After the death of Darth Malak, the Sith split into waring factions, supporting Sith leaders such as
+              Darth Nihilus and Darth Sion. The constant fighting between the factions made it easier for the 
+              Republic to conquer Sith space. However, from 3,954-3,951, the Sith killed a large percentage of the
+              Jedi in what was called the First Jedi Purge.
+          </p></div>
+          <img class="learn-image" src="images/GJP.jpg"/>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>3,681-3,653 <br/>BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">The Great Galactic War (Republic-Sith War)</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>The Republic attempted to dispose of the remains of the Sith Empire. 
+              Unfortunately, the Sith Emperor's Imperial Empire retook the Sith homeword
+              of Korriban. Dread Masters, Sith Lords who caused dozens of Republic ships
+              to flee in terror, where eventually infiltrated by the Republic, and the Sith
+              were likewise defeated during the Battle of Alderaan. The Sith began to recruit
+              the Mandalorians once again, and both the Republic and the Sith developed 
+              their first superweapons. Eventually, Coruscant was sacked by the Sith, and the 
+              Treaty of Coruscant was signed, giving the Sith control of half the galaxy.
+          </p>
+        </div>
+        <img class="learn-image" src="images/GGW.jpg"/>
+      </div>
+    </li>    
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>3,642-3,636 <br/>BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">The Galactic War</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>After a period of cold war following the Treaty of Coruscant, the Eternal Empire
+              under Emperor Arcann, overran both the Sith Empire and the Republic. 
+              Surprisingly, the "Eternal" Empire would last only four years before it was disbanded.
+          </p> </div>
+      </div>
+    </li>
+    
+     <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>3,632 <br/>BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">Revolt Against the Eternal Empire</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>The power of the new Eternal Empire was challenged by the Outlander, who had
+              been encased in carbonite for years. Sith and Jedi alike alied and formed an 
+              alliance on the planet Odessen, ultimately destroying the Eternal Empire.
+              </p> </div>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>2,000-1,000 <br/>BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">New Sith Wars & Fourth Great Schism</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>The wars began with the Fourth Great Schism when Darth Ruin established the New Sith. During the Era, which was broken down into several conflicts such as the Sictis Wars, Republic Dark Age, and the
+              Light and Darkness War, the balance of power between the Jedi and the Sith fluctuated. On the planet Ruusan, the Jedi
+              assumed that they had defeated all of the Sith. Unfortunately, one Sith Lord, Darth Bane, survived. The time period 
+              is called a variety of different names such as The Dreggulch Period, Jedi-Sith War, War of the Fittest, The Betrayal, and The Curse of Qalydon.
+          </p> </div>
+          <img class="learn-image" src="images/DB.jpg"/>
+      </div>
+    </li>
+    
+     <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>22-19 <br/>BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">The Clone Wars & Great Jedi Purge</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>Following a long period of relative peace in the Republic, the Trade Federation, under the secret leadership of Sith Lords
+              Darth Plagueis and Darth Sidious, began a blockade. Later, the Battle of Geonosis would start a 3 year war. In the end, the
+              Imperial Empire would be re-established, with Darth Sidious reigning as Emperor. The Jedi Order was destroyed during the Great
+              Jedi Purge/Palpatine's Purge.
+          </p> </div>
+          <img class="learn-image" src="images/RS.jpg"/>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>0 <br/>BBY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">The Battle of Yavin</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>A small and overpowered Alliance destoyed the Empire's prized Death Star with the help of Luke and Leia Skywalker, Han Solo, and many others.
+              The Alliance survived and would continue to fight until the fall of the Empire a few years later. As a result of the 
+              battle's importance, it would be used as the year 0 BBY (Before the Battle of Yavin) and 0 ABY (After the Battle of Yavin).
+          </p> </div>
+          <img class="learn-image" src="images/BBY.png"/>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>0-4 <br/>ABY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">The Galactic Civil War</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>The Alliance and Imperian Empire fought; the Alliance destroyed two Death Stars, and the Emperor, as well as his apprentice
+              Darth Vador, were killed. A New Galactic Republic was announced.
+          </p> </div>
+          <img class="learn-image" src="images/GCW.jpg"/>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning"><h3>34+ <br/>ABY</h3></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <p><small class="text-muted">The Second Galactic Civil War*</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>The fledgeling New Republic is challenged by Kylo Ren (formerly Ben Solo) and Supreme Leader Snoke's forces. The Siths'
+              Star Killer Base is destroyed by the New Republic. *Not an Official Title
+          </p> </div>
+          <img class="learn-image" src="images/VII.jpeg"/>
+      </div>
+    </li>
+    
+  </ul>
+</div>
+       
+
+
+</body>
+</html>
+
+<!--<li class="timeline-inverted"/>-->

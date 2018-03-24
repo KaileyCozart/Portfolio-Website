@@ -1,0 +1,130 @@
+<html>
+	<head>
+		<title>Lightsharp</title>
+        <link rel="SHORTCUT ICON" href="images/Death Star Icon.png">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="stylesheet.css" rel="stylesheet" />
+        
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+		<script src="bootstrap/js/bootstrap.js"></script>
+        <!--script type="text/javascript">
+
+if (screen.width <= 699) {
+document.location = "mobile.html";
+}
+
+       </script-->
+       <script>
+
+// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+	"mp3": "audio/mpeg",
+	"mp4": "audio/mp4",
+	"ogg": "audio/ogg",
+	"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+	var html5audio=document.createElement('audio')
+	if (html5audio.canPlayType){ //check support for HTML5 audio
+		for (var i=0; i<arguments.length; i++){
+			var sourceel=document.createElement('source')
+			sourceel.setAttribute('src', arguments[i])
+			if (arguments[i].match(/\.(\w+)$/i))
+				sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+			html5audio.appendChild(sourceel)
+		}
+		html5audio.load()
+		html5audio.playclip=function(){
+			html5audio.pause()
+			html5audio.currentTime=0
+			html5audio.play()
+		}
+		return html5audio
+	}
+	else{
+		return {playclip:function(){throw new Error("Unfortunately, your browser does not support HTML5 audio.")}}
+	}
+}
+
+//Initialize two sound clips with 1 fallback file each:
+
+var mouseoversound=createsoundbite("whistle.wav", "whistle.ogg")
+var clicksound=createsoundbite("click.wav", "click.ogg")
+
+</script>
+
+  </head>
+	<body>
+
+
+<a href="index.html"><img src="images/lightsharp.png" alt="Star Wars Font 2" class="logoSpacing"></a>
+
+<div class="franklin">
+    <nav>
+    <ul class="list">
+        <li><a href="learn.html" onmouseover="mouseoversound.playclip()">LEARN</a></li> 
+        <li><a href="challenges.html" onmouseover="mouseoversound.playclip()">CHALLENGES</a></li>
+        <li><a href="achievements.html" onmouseover="mouseoversound.playclip()">ACHIEVEMENTS</a></li>  
+        <li><a href="more.html" onmouseover="mouseoversound.playclip()">MORE</a></li> 
+        <li><a href="about.html" onmouseover="mouseoversound.playclip()">ABOUT</a></li>
+    </ul>
+    </nav>
+</div>
+
+<div class="darthb">
+    <div class="buster"><h1></h1></div><br />
+    <h2><p>A menagerie of blue, green, and brown shapes undulated in front of her as her hands fumbled across the bar toward her drink. The one-eyed Besalisk bartender and cantina owner had given her a toxic-looking green substance that hardly looked edible, but she drank it, just like she had drank every toxic-looking dink that the Bith gave her. Despite the rather disheveled bartender, as well as the equally hideous building, she really didn&#8217;t mind the place. A blue-skinned Twi&#8217;lek with a mangled lekku slid into the seat next to her, sneaking a glance in her direction while he hailed the Besalisk. Turning to face him, the woman raised her voice over the cantina cacophony to speak. </p>
+
+<p>&#8220;What are ya selling today, Igniz?&#8221;</p>
+
+<p>&#8220;Deathsticks. But don&#8217;t ask for &#8216;em. I know you ain&#8217;t got the credits, Vylla.&#8221;</p>
+
+<p>Vylla chuckled.</p>
+
+<p>&#8220;I don&#8217;t want your deathsticks. Not today.&#8221; She paused.</p>
+
+<p>&#8220;Well, what <i>do </i>you want, then?&#8221; asked an annoyed Igniz.</p>
+
+<p>&#8220;Weapons, fake ID &#8211; just the basics.&#8221;</p>
+
+<p>Igniz arched an eyebrow and thoughtfully waved away some of the smoke that had drifted between him and Vylla. Finally, he sighed and slapped an infocard on the table, shaking his head as he did so. </p>
+
+<p>&#8220;Dunkan Makon; he&#8217;ll get you started. He&#8217;s a&#8230; <i>friendly</i> Weequay.&#8221; </p>
+
+<p>Vylla nodded. Stupid human. She&#8217;d never make it. As Igniz walked away, he paused and took one final look at the young girl and snickered. She&#8217;d be dead before long. Igniz shrugged. That was the way of the galaxy; the weak ones died out. And Igniz didn&#8217;t mind helping them to their deaths. </p>
+
+<p>***</p>
+
+<p>In the dark, from a her place behind a garbage container, Vylla observed the doorway. Two guards were posted there &#8211; a scary-looking Wookie and some kind of humanoid. The guards, she assumed, had been posted to warn whatever black market syndicate that existed inside the warehouse of any police. They really had nothing to worry about. Coruscant security didn&#8217;t bother coming down to the lower levels of the city. For hours, Vylla had watched from her location. A few smugglers, assassins, and other choice scum had passed into Dunkan&#8217;s warehouse, but Vylla had no such plans. At least, she wasn&#8217;t planning on coming through the front door. As Igniz had so kindly reminded her, she was broke. She could never afford the cost of a prime weapon or a fake ID. No, she would do what she had always done, what she was good at &#8211; stealing. Quietly, she slid out from her spot behind the garbage bin, walking away from the warehouse. She had spotted a taller, abandoned building to the east of the place, and she sauntered to the building. There was no one near the abandoned old building. When she slipped in through a broken window, she was surprised to find some sort of old factory. With a giant leap, the lithe girl grabbed a piece of machinery and began her ascent. Almost to the third floor, now. Suddenly, however, the machinery shifted, making a creaking noise. Her hand slipped, leaving her hanging by her fingertips. <i>Blast it.</i> Now she had to hurry. The guards probably heard that. Taking a deep breath, she pulled herself up to the top of the machinery and jumped. For a moment, she was free, suspended meters above the ground. Then came the familiar harsh landing that shocked her feet. After a hop, skip, and another jump, she was flying once again &#8211; this time between the factory and the warehouse. Another shock, another harsh landing, and she was on top of Dunkan&#8217;s place. Remembering the guards, Vylla dashed to look down at where they had been standing. The guards were gone. <i>Double blast. </i>She was running out of time. Frantically searching, Vylla found what she had been looking for. A vent. Sliding in, she shimmied her way through. At the first opening in the vent, she dropped down into the warehouse. Right in front of Dunkan&#8217;s guards.</p>
+
+<p>***</p>
+
+<p>Shrouded in by the dark, the hooded figure spoke.</p>
+
+<p><i>Peace is a lie, there is only passion</i></p>
+
+<p><i>Through passion, I gain strength</i></p>
+
+<p><i>Through strength, I gain power</i></p>
+
+<p><i>Through power, I gain victory</i></p>
+
+<p><i>Through victory, my chains will be broken</i></p>
+
+<p><i>The force shall set me free.</i></p>
+
+<p>As he watched the figure chant, he felt his bones chill and his heart falter. This wasn&#8217;t right. None of this was right. He was a crime lord, he had no reason to be afraid of a petty cultist! But he couldn&#8217;t shake the foreboding tone of the figure&#8217;s words. Suddenly, the door burst open, and Dunkan&#8217;s guards thrust a girl in front of him.</p>
+
+<p>&#8220;Sssssir, we found thisss one - tresssspassing.&#8221;</p>
+
+<p>The crime lord gave a toothy grin. She would soon learn what happened to those who trespassed onto his land. </p>
+</h2>
+    
+</body>
+</html>
