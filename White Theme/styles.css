@@ -32,7 +32,7 @@ h1, h2, h3 {
     rgba(74, 67, 67, 0.45),
     rgba(255, 255, 255, 0.45)
     ),
-    url('Images/WhiteTriangle.jpg');
+    url('images/WhiteTriangle.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
@@ -61,13 +61,13 @@ h1 {
 .gitHubBubble {
     float: right;
     margin-right: 20px;
-    background-image: url('Images/github2.png');
+    background-image: url('images/github2.png');
     background-size: cover;
 }
 
 .emailBubble {
     margin-left: 20px;
-    background-image: url('Images/email.png');
+    background-image: url('images/email.png');
     background-size: cover;
 }
 
@@ -118,7 +118,7 @@ h3 {
     rgba(74, 67, 67, 0.45),
     rgba(255, 255, 255, 0.45)
     ),
-    url('Images/WhitePattern2.jpg');
+    url('images/WhitePattern2.jpg');
     background-attachment: fixed;
     padding-top: 20px;
     padding-bottom: 100px;
@@ -149,7 +149,7 @@ h3 {
     rgba(74, 67, 67, 0.45), 
     rgba(255, 255, 255, 0.45)
     ),
-    url('Images/WhiteTriangle.jpg');
+    url('images/WhiteTriangle.jpg');
     background-attachment: fixed;
     background-size: cover;
     padding-top: 20px;
